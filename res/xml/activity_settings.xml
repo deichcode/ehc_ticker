@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="Aktualisierung"
+        android:key="pref_key_update_settings">
+        
+        <CheckBoxPreference
+            android:key="pref_key_auto_update_onscreen"
+            android:summary="Automatische Aktualisierung, wenn Anwendung im Vordergrund"
+            android:title="Aktualisierung im Vordergrund"
+            android:defaultValue="true" />        
+    	
+        <de.deichcode.ehc_neuwiedticker.NumberPickerPreference
+            android:id="@+id/pref_key_auto_update_onscreen_period"
+            android:key="pref_key_auto_update_onscreen_period"
+            android:dependency="pref_key_auto_update_onscreen"
+            android:summary="Aktualisierung alle %d Sekunden"
+            android:title="Aktualisierungsintervall"
+            android:defaultValue="30" />
+        
+<!--         <CheckBoxPreference -->
+<!--             android:key="pref_key_auto_update_offscreen" -->
+<!--             android:summary="Akutmatische aktualisierung, wenn Anwendung im Hintergrund" -->
+<!--             android:title="Aktualisierung im Hintergrund" -->
+<!--             android:defaultValue="true" />         -->
+    	
+<!--         <Preference  -->
+<!--             android:key="pref_key_auto_update_offscreen_period" -->
+<!--             android:dependency="pref_key_auto_update_offscreen" -->
+<!--             android:summary="Aktualisierung alle 300 Sekunden" -->
+<!--             android:title="Aktualisierungsintervall" /> -->
+         
+    </PreferenceCategory>
+    
+<!--     <PreferenceCategory -->
+<!--         android:title="Benachrichtigungen" -->
+<!--         android:key="pref_key_notification_settings"> -->
+        
+<!--         <CheckBoxPreference -->
+<!--             android:key="pref_key_notification_goal" -->
+<!--             android:summary="Benachrichtigung, wenn ein Tor gefallen ist" -->
+<!--             android:title="Tor" -->
+<!--             android:defaultValue="true" /> -->
+        
+<!--         <CheckBoxPreference -->
+<!--             android:key="pref_ke_notifivation_newMessage" -->
+<!--             android:summary="Benachrichtigung bei neue Nachricht" -->
+<!--             android:title="Nachricht" -->
+<!--             android:defaultValue="false" />         -->
+    	
+<!--        <CheckBoxPreference -->
+<!--             android:key="pref_key_notifivation_newPenaltie" -->
+<!--             android:summary="Benachrichtigung bei neuer Strafe" -->
+<!--             android:title="Strafe" -->
+<!--             android:defaultValue="false" />  -->
+            
+<!--         <CheckBoxPreference  -->
+<!--             android:key="pref_key_notifivation_thirdStarts" -->
+<!--             android:summary="Drittelbeginn" -->
+<!--             android:title="Benachrichtigung, wenn neues Drittel beginnt" -->
+<!--             android:defaultValue="false" />        -->
+    	 
+<!--     </PreferenceCategory> -->
+    
+
+</PreferenceScreen>

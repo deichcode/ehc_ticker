@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/relative_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewHome"
+                android:layout_width="100dp"
+                android:layout_height="83dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/background_home"
+                android:contentDescription="@string/logo_home_description"
+                android:onClick="teamName"
+                android:paddingBottom="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/ic_launcher" />
+
+            <ProgressBar
+                android:id="@+id/progressHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:contentDescription=""
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/noScore"
+            android:textColor="@color/scoreboard_red"
+            android:textScaleX="0.9"
+            android:textSize="45sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_container2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewGuest"
+                android:layout_width="100dp"
+                android:layout_height="83dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/background_guest"
+                android:contentDescription="@string/logo_guest_description"
+                android:onClick="teamName"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/ic_launcher" />
+
+            <ProgressBar
+                android:id="@+id/progressGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewFirsthThird"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/first"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewSecondThird"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/second"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewThirdThird"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/third"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewOvertime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/overtime"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/textViewFirsthThirdScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/noScore"
+            android:textColor="@color/scoreboard_red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewSecondThirdScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/noScore"
+            android:textColor="@color/scoreboard_red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewThirdThirdScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/noScore"
+            android:textColor="@color/scoreboard_red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewOvertimeScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/noScore"
+            android:textColor="@color/scoreboard_red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listViewTicker"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_blue"
+            android:paddingTop="10dp" >
+        </ListView>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_grey_dark">#666</color>
+    <color name="light_grey">#eee</color>
+    <color name="ehc_blue">#161865</color>
+    <color name="black">#1a1a1a</color>
+    <color name="scoreboard_red">#37E903</color>
+    <color name="white">#fff</color>
+    <color name="background_blue">#183857</color>
+</resources>
+
